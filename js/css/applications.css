@@ -1,0 +1,86 @@
+ /* CSS for Job Applications Page */
+ .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.page-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.no-applications {
+    font-style: italic;
+    color: #555;
+}
+
+.application-item {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.job-title {
+    font-weight: bold;
+}
+
+.applied-date,
+.status {
+    font-style: italic;
+    color: #777;
+}
+
+a {
+    text-decoration: none;
+    color: #007bff;
+    margin-right: 10px;
+}
+
+.btn {
+    padding: 5px 10px;
+    border: none;
+    background-color: #dc3545;
+    color: #fff;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #bd2130;
+}
+
+.btn-secondary {
+    background-color: #007bff;
+}
+
+.btn-secondary:hover {
+    background-color: #0056b3;
+}
+
+.application-list{
+    background-color: white;
+}
+.btn {
+    display: inline-block;
+    padding: 8px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    text-decoration: none; /* Remove underline from buttons */
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+/* Red color for delete button */
+.btn-danger {
+    background-color: #ff0707; /* Red color */
+}
+
+.btn-danger:hover {
+    background-color: #c82333; /* Darker red color on hover */
+}

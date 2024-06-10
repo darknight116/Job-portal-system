@@ -1,0 +1,124 @@
+/* CSS for Dashboard */
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.dashboard {
+  display: flex;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+.sidebar h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 18px;
+  transition: color 0.3s ease;
+}
+
+.sidebar a:hover {
+  color: #007bff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  font-size: 36px;
+  color: #333;
+}
+
+.header p {
+  color: #666;
+}
+
+.profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile div {
+  font-size: 14px;
+  font-weight: bold;
+  color: #333;
+}
+
+.profile p {
+  color: #666;
+}
+
+.profile img {
+  border-radius: 50%;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  object-fit: cover; /* Ensure the image covers the entire circle */
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+
+.profile.user{
+  border-radius: 50%;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  object-fit: cover; /* Ensure the image covers the entire circle */
+  margin-bottom: 10px; /* Adjust spacing as needed */
+}
+ .profile.admin{
+  border-radius: 50%;
+  width: 100px; /* Adjust the size as needed */
+  height: 100px; /* Adjust the size as needed */
+  object-fit: cover; /* Ensure the image covers the entire circle */
+  margin-bottom: 10px; /* Adjust spacing as needed */
+ }
+
+
+.logout {
+  text-align: center;
+}
+
+.logout button {
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.logout button:hover {
+  background-color: #c82333;
+}

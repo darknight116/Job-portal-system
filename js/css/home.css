@@ -1,0 +1,603 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #add8e6;
+}
+
+header {
+  background-color:  #333333;
+  padding: 8px;
+  height: 59px;
+    display: grid;
+    grid-template-rows: 10px auto;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+/* Target main navigation element */
+nav {
+  display: flex;
+  justify-content: flex-end; /* Move navigation bar to the right */
+  
+}
+
+/* Target list items and remove default appearance */
+nav li {
+  display: inline-block; /* Make inline-block for button-like behavior */
+  margin: 0 10px; /* Adjust spacing as needed */
+  border: none;
+  background-color: #333333; /* Initial button color */
+  color: white; /* Text color */
+  padding: 10px 15px; /* Adjust padding for desired button size */
+  text-align: center; /* Optionally center text */
+  cursor: pointer; /* Indicate clickable element */
+}
+
+/* Apply hover effects */
+nav li:hover {
+ /* background-color: #333333;  Hover color */
+  color: #fff9f9; /* Hover text color */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Subtle shadow on hover */
+}
+
+/* Optional styling for link element */
+nav li a {
+  text-decoration: none; /* Remove underline on hover */
+  color: inherit; /* Inherit text color from parent */
+  font-size: large;
+}
+
+/* Logo styling (if needed) */
+.logo {
+  display: flex;
+  align-items: center;
+  height: 80px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.logo a {
+  text-decoration: none; /* Remove underline */
+  cursor: pointer; /* Clickable behavior */
+  /* Optional hover effects here */
+  color: white;
+}
+
+
+.portal {
+  font-size: 1.5rem; /* Adjust font size as needed */
+} 
+
+
+.hero {
+ background-image:url("../photo/home4.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: 100px;
+}
+
+.hero h2 {
+  font-size: 3.5em;
+  margin-bottom: 20px;
+  color: rgb(255, 255, 255);
+}
+.hero marquee{
+  color: rgb(255, 255, 255);
+}
+.hero p {
+  font-size: 2.2em;
+  color: rgb(255, 255, 255);
+}
+
+.search-bar {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.search-bar input {
+  padding: 10px;
+  border: 1px solid #ccc;
+  margin-right: 10px;
+}
+
+.search-bar button {
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+
+
+
+
+/* Styling for company list container */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin: 20px auto;
+  width: 80%; /* Adjust as needed */
+}
+
+/* Styling for individual company boxes */
+.company {
+  display: flex;
+  flex-direction: column;
+  background-color: white ;
+  border: 1px solid #000000;
+  padding: 15px;
+  margin: 10px;
+  width: 250px; /* Adjust as needed */
+  max-width: 400px; /* Optional: Set a maximum width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+.container h2{
+  color: black;
+}
+
+.company h2 {
+  text-align: center;
+  font-size: 1.2em;
+  margin-bottom: 10px;
+  
+}
+
+.company ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.company li {
+  margin-bottom: 5px;
+}
+
+/* Styling for the "Apply Now" button */
+.company a {
+  display: inline-block;
+  background-color: #3d3b3c; /* Adjust color as needed */
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; /* Ensure the button cursor looks clickable */
+  text-align: center;
+  text-decoration: none;
+  font-size: 14px;
+  margin-top: auto; /* Position at the bottom of the box */
+}
+
+.company a:hover {
+  background-color: #3e8e41; /* Adjust hover color as needed */
+}
+
+/* Optional responsive media queries for different screen sizes */
+@media (max-width: 768px) {
+  .company {
+    width: 100%;
+  }
+}
+
+
+
+/*----------------------------------*/
+/* Overall styling */
+
+
+/* Overall styling */
+
+.instructor-row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  background-color: #add8e6;
+}
+.instructor-row p{
+  color: white;
+}
+
+.instructor-card1 {
+  width: calc(33.33% - 10px);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.instructor-card2 {
+  width: calc(33.33% - 10px);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  
+}
+
+.instructor-card3 {
+  width: calc(33.33% - 10px);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.instructor-card4 {
+  width: calc(33.33% - 10px);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 43px 0px 0px;
+}
+
+.instructor-card5 {
+  width: calc(33.33% - 10px);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 43px 0px 0px;
+}
+
+.instructor-card6 {
+  width: calc(33.33% - 10px);
+  height: 300px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+  padding: 43px 0px 0px;
+}
+
+.instructor-card1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor-card2 img {
+  width: 100%;
+  height: 49vh;
+  object-fit: cover;
+}
+
+.instructor-card3 img {
+  width: 100%;
+  height: 63vh;
+  object-fit: cover;
+}
+
+.instructor-card4 img {
+  width: 100%;
+  height: 49vh;
+  object-fit: cover;
+}
+
+.instructor-card5 img {
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+}
+
+.instructor-card6 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.instructor-details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  opacity: 0;
+  transform: translateY(100%);
+  transition: transform 0.3s ease;
+}
+
+.instructor-card1:hover .instructor-details {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+
+.instructor-card2:hover .instructor-details {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.instructor-card3:hover .instructor-details {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.instructor-card4:hover .instructor-details {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.instructor-card5:hover .instructor-details {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.instructor-card6:hover .instructor-details {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.instructor-details h3 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.instructor-details p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-content {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee-scroll 20s linear infinite;
+}
+
+@keyframes marquee-scroll {
+  0% {
+      transform: translateX(100%);
+  }
+  100% {
+      transform: translateX(-100%);
+  }
+}
+
+.ins{
+  text-align: center;
+  color: white;
+}
+
+
+/* Global styles */
+/* Global styles */
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+.container h2{
+  color: rgb(0, 0, 0);
+}
+
+/* Blog section styles */
+.blog-section {
+  padding: 50px 0;
+  background-color: #add8e6;
+}
+
+.blog-posts {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.blog-post {
+  width: calc(33.33% - 20px);
+  margin-bottom: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-post:hover {
+  animation: bounce 0.5s ease infinite alternate;
+}
+
+@keyframes bounce {
+  0% {
+      transform: translateY(0);
+  }
+  100% {
+      transform: translateY(-10px);
+  }
+}
+
+.blog-post img {
+  width: 100%;
+  height: auto;
+  border-bottom: 1px solid #ddd;
+}
+
+.blog-post h3 {
+  padding: 20px;
+  margin: 0;
+  font-size: 1.2em;
+}
+
+.blog-post p {
+  padding: 0 20px 20px;
+  margin: 0;
+  font-size: 1em;
+}
+
+.blog-post a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  background-color: #67a1c9;
+  color: #fff;
+  text-decoration: none;
+}
+
+.blog-post a:hover {
+  background-color: #457aa9;
+}
+
+
+/* Success Stories*/
+
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Flip container */
+.flip-container {
+  perspective: 1000px;
+  width: 200px; /* Adjust as needed */
+  height: 300px; /* Adjust as needed */
+  margin: 20px; /* Adjust as needed */
+}
+
+.flipper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+}
+
+.flip-container:hover .flipper {
+  transform: rotateY(180deg);
+}
+
+.front, .back {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  backface-visibility: hidden;
+}
+
+.front {
+  z-index: 2;
+}
+
+.back {
+  transform: rotateY(180deg);
+}
+
+/* Styling for the photo */
+.flip-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Styling for the text */
+.flip-container h2, .flip-container p {
+  padding: 10px;
+  margin: 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-radius: 0 0 5px 5px;
+}
+
+.sec{
+  display: flex;
+  background-color: #add8e6;
+}
+.inss{
+  text-align: center;
+  color: white;
+}
+
+
+
+/* Styling for HOW CAN USE SECTION */
+
+
+.how-it-works {
+  padding: 50px 0;
+}
+
+.steps {
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+
+
+.step {
+  width: 30%;
+  text-align: center;
+  animation: fadeInUp 1s ease both;
+  cursor: pointer;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.step:hover p {
+  opacity: 1;
+  visibility: visible;
+}
+
+.step:nth-child(odd) {
+  animation-delay: 0.5s;
+}
+
+.step:nth-child(even) {
+  animation-delay: 1s;
+}
+
+@keyframes fadeInUp {
+  from {
+      opacity: 0;
+      transform: translateY(20px);
+  }
+  to {
+      opacity: 1;
+      transform: translateY(0);
+  }
+}
+
+.step h3 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.step p {
+  font-size: 1rem;
+  color: #666;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 768px) {
+  .steps {
+      flex-direction: column;
+  }
+
+  .step {
+      width: 100%;
+      margin-bottom: 30px;
+  }
+}
+
